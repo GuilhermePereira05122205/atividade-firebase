@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/semantic/semantic.css">
+
+<table class="ui celled table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Origem</th>
+            <th>Observacao</th>
+            <th>Data observacao</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each agendamentos}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{data.nome}}</td>
+            <td>{{data.telefone}}</td>
+            <td>{{data.origem}}</td>
+            <td>{{data.observacao}}</td>
+            <td>{{data.data_contato}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

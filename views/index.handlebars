@@ -3,23 +3,26 @@
 <table class="ui celled table">
     <thead>
         <tr>
-            <th>Id</th>
             <th>Nome</th>
             <th>Telefone</th>
             <th>Origem</th>
             <th>Observacao</th>
             <th>Data observacao</th>
+            <th>Opcoes</th>
         </tr>
     </thead>
     <tbody>
         {{#each agendamentos}}
         <tr>
-            <td>{{id}}</td>
             <td>{{data.nome}}</td>
             <td>{{data.telefone}}</td>
             <td>{{data.origem}}</td>
             <td>{{data.observacao}}</td>
             <td>{{data.data_contato}}</td>
+            <td>
+                <a href="/atualizar/{{id}}"><button class="ui primary button">atualizar</button></a>
+                <a href="/delete/{{id}}"><button class="ui red button">deletar</button></a>
+            </td>
         </tr>
         {{/each}}
     </tbody>

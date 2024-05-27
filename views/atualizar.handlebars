@@ -1,0 +1,29 @@
+<div class="ui container">
+    <form class="ui form" method="POST" action="/atualizar/{{id}}">
+    <div class="field">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Nome" value="{{agendamento.nome}}">
+    </div>
+    <div class="field">
+        <label>Data contato</label>
+        <input type="text" name="data_contato" placeholder="Data contato" value="{{agendamento.data_contato}}">
+    </div>
+
+    <div class="field">
+        <label>Observação</label>
+        <input type="text" name="observacao" placeholder="Observação" value="{{agendamento.observacao}}">
+    </div>
+
+    <div class="field">
+        <label>Origem</label>
+        <input type="text" name="origem" placeholder="Origem" value="{{agendamento.origem}}">
+    </div>
+
+    <div class="field">
+        <label>Telefone</label>
+        <input type="text" name="telefone" placeholder="Telefone" value="{{agendamento.telefone}}">
+    </div>
+    
+    <button class="ui button" type="submit">Enviar</button>
+    </form>
+</div>
